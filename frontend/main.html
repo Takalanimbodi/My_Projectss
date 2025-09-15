@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>library file management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    </head>
+     <body>
+     <h1>Library Management System</h1>
+<div class="row"> 
+  <!-- Return Book -->
+   <form id="returnForm">
+  <div class="section">
+    <h2>Return Book</h2>
+    <label>Book Title</label>
+    <input type="text" id="returnBookTitle" placeholder="Start typing..." list="returnBookList" required>
+    <!-- 🔹 Hidden field to hold the actual bookId -->
+    <input type="hidden" id="returnBookId">
+
+    <label>Username</label>
+    <input type="text" id="returnUsername" required>
+
+    <div class="button-container">
+      <button id="returnbtn" type="submit">Return Book</button>
+    </div>
+  </div>
+  </form>
+
+<!-- Loan Section -->
+   <form id="loanForm">
+  <div class="section">
+    <h2>Loan Book</h2>
+    <label>Book Title</label>
+    <input type="text" id="loanBookTitle" placeholder="Start typing..." autocomplete="off" required>
+    <input type="hidden" id="loanBookId">
+
+    <label>Username</label>
+    <input type="text" id="loanUsername" required>
+
+    <label>Loan Date</label>
+    <input type="date" id="loanDate" required>
+
+    <label>Due Date</label>
+    <input type="date" id="dueDate" required>
+
+    <div class="button-container">
+      <button id="loanbtn" type="submit">Loan Book</button>
+    </div>
+   </div>
+   </form>
+
+<!-- Fine Payment Section -->
+   <form id="payForm">
+  <div class="section">
+    <h2>Pay Fine</h2>
+    <label>Username</label>
+    <input type="text" id="fineUsername" name="username" placeholder="Start typing..." required>
+    <input type="hidden" id="payId" >
+
+    <label>Amount</label>
+    <input type="number" id="paymentAmount" required>
+
+    <div class="button-container">
+      <button id="paybtn" type="submit">Submit Payment</button>
+    </div>
+  </div>
+  </form>
+
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
