@@ -1,0 +1,69 @@
+  <title>TK-website</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/menu.css') }}" />
+</head>
+<body class="bg-light">
+
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm">
+  <div class="container">
+    
+    <!-- Toggle Button on the Left -->
+    <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Nav Links -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="{{ url_for('home') }}">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('checkout') }}">Checkout</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="{{ url_for('contact') }}">Contact</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Brand Name on the Right -->
+    <a class="navbar-brand ms-auto" href="{{ url_for('home') }}">TK-website</a>
+
+  </div>
+</nav>
+
+
+
+  <h4>🍔 Are you ready to order?.. well click on any image and start ordering</h4>
+
+  <div class="menu d-flex gap-3 justify-content-center">
+    <div class="image-box">
+      <a href="{{ url_for('kota') }}">
+        <img src="{{ url_for('static', filename='assets/kota.jpg') }}" alt="Kota" class="img-fluid rounded" />
+      </a>
+    </div>
+
+    <div class="image-box">
+      <a href="{{ url_for('chips') }}">
+        <img src="{{ url_for('static', filename='assets/chips.png') }}" alt="Chips" class="img-fluid rounded" />
+      </a>
+    </div>
+
+    <div class="image-box">
+      <a href="{{ url_for('drinks') }}">
+        <img src="{{ url_for('static', filename='assets/drinks.jpg') }}" alt="Drinks" class="img-fluid rounded" />
+      </a>
+    </div>
+  </div>
+ 
+  </div>
+   
+   </div>for="checkout-summary" 
+            <textarea id="checkout-summary" class="form-control" rows="6" readonly></textarea>
+</body>
+
+
+</html>

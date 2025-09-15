@@ -1,0 +1,106 @@
+
+.menu,.contact{
+  display: flex;
+  flex-wrap: wrap;        /* Allows wrapping on smaller screens */
+  gap: 1rem;              /* Space between images */
+  justify-content: center; /* Center images horizontally */
+  align-items: flex-start;
+}
+
+.menu .image-box {
+  flex: 1 1 300px; /* allows responsiveness */
+  max-width: 300px;
+}
+
+.menu img {
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.menu img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.tab-content {
+  border: 2px solid #dee2e6;  /* light gray */
+  border-radius: 8px;
+  padding: 1.5rem;
+  background-color: #fff;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.contact-container{
+        background: #fff;
+        padding: 20px;
+        margin: 20px auto;
+        width: 400px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        font-family: Arial, sans-serif;
+     }
+
+     h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        width: 100%;
+        height: 50px;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    textarea {
+        height: 300px; /* override height for textarea */
+        resize: none;  /* prevents user from resizing */
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #007BFF;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+     button:hover {
+        background-color: #0056b3;
+    }
+
+.card {
+      width: 100%;
+    }
+
+    .card img {
+      height: 250px;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    .qty-label {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .btn-group-lg .btn i {
+      font-size: 1.5rem;
+    }
+
+    .card-footer {
+      border-top: 1px solid #ddd;
+    }
