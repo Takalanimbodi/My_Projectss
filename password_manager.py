@@ -4,7 +4,7 @@ from tkinter import messagebox
 import json
 import os
 
-# ---- Save Password Function ---- #
+# Save Password Function 
 def save():
     website = web_entry.get()
     username = Username_entry.get()
@@ -21,7 +21,7 @@ def save():
         messagebox.showinfo(title="Oops", message="Enter all required fields")
         return
     
-    # ✅ Ask user to confirm before saving
+    # user to confirm before saving
     confirm = messagebox.askyesno(title="Confirm Submission", message="Are you sure you want to save this password?")
     if not confirm:
         return  # Cancel if user chooses "No"
@@ -43,7 +43,7 @@ def save():
     web_entry.delete(0, END)
     Password_entry.delete(0, END)
 
-# ---- Search Password Function ---- #
+# Search Password Function
 def searchPassword():
     website = web_entry.get()
 
@@ -65,7 +65,7 @@ def searchPassword():
     else:
         messagebox.showinfo(title="Not found", message=f"No details for '{website}' found.")
 
-# ---- UI Setup ---- #
+# UI Setup 
 window = Tk()
 window.title("My Password Storage")
 window.config(padx=20, pady=20)
